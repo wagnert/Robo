@@ -1,5 +1,26 @@
 # Changelog
 
+#### 1.0.0
+
+* [Collection] Add tasks to a collection, and implement them as a group with rollback by @greg-1-anderson
+* Add output formatters by @greg-1-anderson
+* Use league/container to do Dependency Injection by @greg-1-anderson
+* [Extract] task added by @greg-1-anderson
+* [Pack] task added by @greg-1-anderson
+* [TmpFile] task added by @greg-1-anderson
+* Support standalone Robo scripts (#!/usr/bin/env robo) by @greg-1-anderson
+* Provide ProgresIndicatorAwareInterface and ProgressIndicatorAwareTrait by @greg-1-anderson
+* Add --simulate mode by @greg-1-anderson
+* Add `robo generate:task` code-generator to make new stack-based task wrappers around existing classes by @greg-1-anderson
+* Add `robo sniff` by @dustinleblanc
+* Implement ArrayInterface for Result class, so result data may be accessed like an array 
+* Defer execution of operations in taskWriteToFile until the run() method by @greg-1-anderson
+* Add Write::textIfMatch() for taskWriteToFile by @greg-1-anderson
+* ResourceExistenceChecker used for error checking in DeleteDir, CopyDir, CleanDir and Concat tasks by @burzum
+* Provide ResultData base class for Result by @greg-1-anderson
+* ArgvInput now available via $this->getInput() in RoboFile by Thomas Spigel
+* Add optional message to git tag task by Tim Tegeler
+
 #### 0.6.0
 
 * Added `--load-from` option to make Robo start RoboFiles from other directories. Use it like `robo --load-from /path/to/where/RobFile/located`.
